@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="login-page-wrapp d-flex">
+    <div class="login-form-wrap d-flex align-items-center">
+      <div class="form-card card ml-auto">
+        <div class="card-body">
+          <div>
+            <ul class="nav nav-tabs" role="tablist">
+              <li class="active nav-item"><a href="#home" aria-controls="home" role="tab" class="nav-link"
+                  data-toggle="tab">Login</a>
+              </li>
+              <li class="nav-item"><a href="#registration-tab" aria-controls="registration-tab" class="nav-link"
+                  role="tab" data-toggle="tab">Sign up</a></li>
+            </ul>
+            <div class="tab-content">
+              <div role="tabpanel" class="tab-pane active" id="home">
+                <div class="card-body">
+                  <h4 class="card-title">Please Login</h4>
+                  <form name="loginForm">
+                    <div class="form-group">
+                      <label for="email">Email address</label>
+                      <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                        placeholder="Enter email" data-required="email"
+                        data-invalid-message="Please provide valid email example@example.com" />
+                    </div>
+                    <div class="form-group">
+                      <label for="password">Password</label>
+                      <input type="password" class="form-control" id="password" placeholder="Password"
+                        data-required="password" />
+                    </div>
+                    <button type="submit" class="btn login-btn btn-primary">Submit</button>
+                  </form>
+                </div>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="registration-tab">
+                <div class="auth-wrap d-flex mt-3">
+                  <div class="auth-form col mx-auto my-auto">
+                    <form name="registrationForm" novalidate>
+                      <div class="form-group">
+                        <div class="row mr-0 ml-0">
+                          <input class="form-control col first-name mr-4 form-control-sm" type="text" id="first_name"
+                            placeholder="First Name" data-required="name">
+                          <input class="form-control form-control-sm col last-name" type="text" id="last_name"
+                            placeholder="Last Name" data-required="name">
+                          <input class="form-control form-control-sm nick-name" type="text" id="nickname"
+                            placeholder="Nick Name" data-required="name">
+                        </div>
+                        <div class="details">
+                          <h6 class="mt-4 mb-3">Date of birth</h6>
+                          <div class="row ml-0 mr-0 mb-4">
+                            <select name="day" class="form-control form-control-sm day-of-birth col mr-5" id="day"
+                              data-required="select">
+                              <option value="">Day</option>
+                            </select>
+                            <select name="month" class="form-control form-control-sm month-of-birth col mr-5"
+                              data-required="select">
+                              <option value="">Month</option>
+                            </select>
+                            <select name="year" class="form-control form-control-sm year-of-birth col"
+                              data-required="select">
+                              <option value="">Year</option>
+                            </select>
+                          </div>
+                          <select class="form-control form-control-sm gender" data-required="select">
+                            <option value="">Gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                          </select>
+                          <input type="email" class="form-control form-control-sm" id="reg-email"
+                            aria-describedby="emailHelp" placeholder="Enter email" data-required="email"
+                            data-invalid-message="Please provide valid email example@example.com" />
+                          <input class="form-control form-control-sm" type="text" id="phone" placeholder="Phone number"
+                            data-required="number">
+                          <div class="row">
+                            <div class="col">
+                              <label> Enter your country:<br />
+                                <input type="text" name="countries" list="countries" id="countries-input"
+                                  class="form-control form-control-sm" data-required="name" />
+                                <datalist id="countries">
+                                  <label>
+                                    <select name="countries" id="country-select">
+                                    </select>
+                                  </label>
+                                </datalist>
+                              </label>
+                            </div>
+                            <div class="col city-wrapper">
+                              <label> Enter your city:<br />
+                                <input type="text" name="cities" list="cities" disabled="disabled" id="cities-input"
+                                  class="form-control form-control-sm" data-required="name" />
+                                <datalist id="cities">
+                                  <label>
+                                    <select name="cities" id="cities-select">
+                                    </select>
+                                  </label>
+                                </datalist>
+                              </label>
+                            </div>
+                          </div>
+                          <input type="password" class="form-control form-control-sm" id="reg-password"
+                            placeholder="Enter the password" data-required="password">
+                          <input type="password" class="form-control form-control-sm" id="reg-password2"
+                            placeholder="Repeat the password" data-required="password">
+                        </div>
+                        <div class="d-flex mt-5">
+                          <button type="submit" class="reg-btn btn btn-success">Sign Up</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.login-form-wrap -->
+    <div class="login-greeting-screen d-flex align-items-center">
+      <div class="login-greeting-screen-text">
+        <h1 class="login-greeting-screen-title">Welcome to my app</h1>
+        <p class="login-greeting-screen-description">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
+          inventore non accusantium earum, illo dolores reprehenderit laborum
+          ratione quos doloribus repellat eligendi deleniti. Ipsum voluptate
+          ipsa exercitationem eaque totam. A.
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
